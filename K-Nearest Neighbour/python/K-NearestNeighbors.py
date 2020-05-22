@@ -10,6 +10,8 @@ def k_nearest_neighbors(data,predict,k=3):
     if(len(data))>=k:
         warnings.warn('K is set a value less than total voting groups')
     distances=[]
+    
+    
     for group in data:
         for features in data[group]:
             # 1. euclidean_distance=sqrt( (features[0]-predict[0])**2 + (features[1]-predict[1])**2 )
